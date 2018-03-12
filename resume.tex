@@ -1,0 +1,110 @@
+% KOMA-article class
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} 
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=1in]{geometry}
+
+% No pagenumbers/headers/footers
+\pagestyle{empty}
+
+\titleformat{\section}
+{\huge\bfseries\lowercase}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}
+{\bfseries\Large}
+{$\bullet$}
+{0.5em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[\hspace{.5em}---]
+
+\titlespacing{\subsubsection}{0em}{.25em}{.5em}
+
+
+\renewcommand{\maketitle}{
+    \begin{center}
+        {
+            \huge
+            \bfseries
+            \theauthor
+        }
+ 
+        \vspace{.25em}
+        nicholas@asimov.me --- http://nicholasasimov.com
+    \end{center}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+
+\title{R\'esum\'e}
+\author{Nicholas Asimov}
+
+\maketitle
+
+\section{Summary}
+
+Golang software developer with knowledge in cloud architecture, live streaming services, concurrency,
+continuous integration and single page applications.
+
+Advocate of simplicity and minimalism in systems and code.
+
+\section{Technical skills}
+
+\subsection{Languages}
+
+\subsubsection{Programming}
+Go, Javascript, Python
+
+\subsubsection{Markup}
+{\LaTeX}, HTML, CSS
+
+
+\subsection{Tools}
+
+\subsubsection{Infrastructure}
+Kubernetes, Docker
+
+\subsubsection{Databases}
+MongoDB, PostgreSQL
+
+\subsubsection{Multimedia}
+FFmpeg
+
+\subsection{Networking}
+HTTP, WebSockets
+
+\section{General skills}
+
+\subsubsection{Languages}
+English (fluent), Russian (native)
+
+\section{Job Experience}
+
+\subsection{Facecast}
+
+
+\end{document}
